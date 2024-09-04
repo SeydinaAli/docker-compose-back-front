@@ -1,0 +1,7 @@
+com\hostbuddy\ServletInitializer.class
+com\hostbuddy\repository\ItemRepository.class
+com\hostbuddy\service\ItemServiceImp.class
+com\hostbuddy\controller\ItemController.class
+com\hostbuddy\dto\Item.class
+com\hostbuddy\service\ItemService.class
+com\hostbuddy\HostBuddyResTapiCrudApplication.class
