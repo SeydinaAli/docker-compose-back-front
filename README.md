@@ -7,7 +7,7 @@ Ce référentiel contient une application CRUD (Create, Read, Search) créée av
 ### Prérequis
 Pour exécuter cette application, vous devez disposer des prérequis suivants :
 
-- Java Development Kit (JDK) 8 ou supérieur
+- Java Development Kit (JDK) 17
 - Node.js et npm (Node Package Manager)
 - Base de données MySQL (avec un schéma nommé `hostbuddy_restapi`)
 
