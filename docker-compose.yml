@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./springboot-backend
+    ports:
+      - "8080:8080"
+    networks:
+      - app-network
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/hostbuddy_restapi
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: your_password
+    depends_on:
+      - db
+
+  frontend:
+    build: ./react-frontend
+    ports:
+      - "3000:80"
+    networks:
+      - app-network
+    depends_on:
+      - backend
+
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: your_password
+      MYSQL_DATABASE: hostbuddy_restapi
+    ports:
+      - "3306:3306"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

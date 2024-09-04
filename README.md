@@ -1,72 +1,71 @@
-# Spring Boot and React CRUD Application
+# Application Spring Boot et React CRUD
 
-This repository contains a CRUD (Create, Read, Search) application built with Spring Boot for the backend REST API and React for the frontend user interface.
+Ce référentiel contient une application CRUD (Create, Read, Search) créée avec Spring Boot pour l'API REST backend et React pour l'interface utilisateur frontend.
 
-## Getting Started
+## Mise en route
 
-### Prerequisites
-To run this application, you need to have the following prerequisites:
+### Prérequis
+Pour exécuter cette application, vous devez disposer des prérequis suivants :
 
-- Java Development Kit (JDK) 8 or above
-- Node.js and npm (Node Package Manager)
-- MySQL database (with a schema named `hostbuddy_restapi`)
+- Java Development Kit (JDK) 8 ou supérieur
+- Node.js et npm (Node Package Manager)
+- Base de données MySQL (avec un schéma nommé `hostbuddy_restapi`)
 
-### Setup
+### Configuration
 
-1. Clone the repository to your local machine.
-`git clone https://github.com/Millstack/springboot-react.git`
+1. Clonez le référentiel sur votre machine locale.
+`git clone https://github.com/SeydinaAli/docker-compose-back-front.git
 
-2. Set up the MySQL database:
-- Create a MySQL database with the name `hostbuddy_restapi`
-- Update the database connection properties in the application.properties file located in the springboot-backend folder. Set the correct values for spring.datasource.url, spring.datasource.username, and spring.datasource.password
+2. Configurez la base de données MySQL :
+- Créez une base de données MySQL avec le nom `hostbuddy_restapi`
+- Mettez à jour les propriétés de connexion à la base de données dans le fichier application.properties situé dans le dossier springboot-backend. Définissez les valeurs correctes pour spring.datasource.url, spring.datasource.username et spring.datasource.password
 
-3. Build and run the Spring Boot backend:
-- Open a terminal and navigate to the springboot-backend folder
-- Build the backend application using Maven: `./mvnw clean package`
-- Run the backend application: `./mvnw spring-boot:run`
+3. Créez et exécutez le backend Spring Boot :
+- Ouvrez un terminal et accédez au dossier springboot-backend
+- Créez l'application backend à l'aide de Maven : `./mvnw clean package`
+- Exécutez l'application backend : `./mvnw spring-boot:run`
 
-4. Install dependencies and run the React frontend:
-- Open another terminal and navigate to the react-frontend folder
-- Install dependencies using npm: `npm install`
-- Start the React development server: `npm start`
+4. Installez les dépendances et exécutez le frontend React :
+- Ouvrez un autre terminal et accédez au dossier react-frontend
+- Installez les dépendances à l'aide de npm : `npm install`
+- Démarrez le serveur de développement React : `npm start`
 
-5. Access the application:
-- Open a web browser and go to http://localhost:3000 to access the React frontend
+5. Accédez à l'application :
+- Ouvrez un navigateur Web et accédez à http://localhost:3000 pour accéder au frontend React
 
-# Application Structure
+# Structure de l'application
 
-The repository is structured as follows:
-- `springboot-backend`: Contains the Spring Boot backend application
-- `react-frontend`: Contains the React frontend application
+Le référentiel est structuré comme suit :
+- `springboot-backend` : contient l'application backend Spring Boot
+- `react-frontend` : contient le React application frontend
 
-- The Spring Boot backend follows a standard structure with packages for different components:
-- `com.hostbuddy`: Base package
-- `com.hostbuddy.dto`: Contains the data transfer objects (DTOs) or entity classes
-- `com.hostbuddy.repository`: Contains the repository interfaces for interacting with the database
-- `com.hostbuddy.service`: Contains the service interfaces and implementations
-- `com.hostbuddy.controller`: Contains the REST API controllers
+- Le backend Spring Boot suit une structure standard avec des packages pour différents composants :
+- `com.hostbuddy` : package de base
+- `com.hostbuddy.dto` : contient les objets de transfert de données (DTO) ou les classes d'entités
+- `com.hostbuddy.repository` : contient les interfaces de référentiel pour interagir avec la base de données
+- `com.hostbuddy.service` : contient les interfaces et implémentations de service
+- `com.hostbuddy.controller` : contient les contrôleurs d'API REST
 
-The React frontend code is located in the react-frontend folder
+Le code du frontend React se trouve dans le dossier react-frontend
 
-# How to Use
+# Comment utiliser
 
-- The React frontend provides a user interface to interact with the backend REST API
-- You can add, view all, and search by name items through the frontend
-- The backend stores the items in the MySQL database
-- Update the application.properties file with your own database connection details if needed
+- Le frontend React fournit une interface utilisateur pour interagir avec l'API REST du backend
+- Vous pouvez ajouter, afficher tous les éléments et rechercher par nom via le frontend
+- Le backend stocke les éléments dans la base de données MySQL
+- Mettez à jour le fichier application.properties avec vos propres détails de connexion à la base de données si nécessaire
 
-# React App
+# Application React
 
-- Clone the repository: https://github.com/Millstack/springboot-react.git
-- Navigate to the project directory: cd react-app
-- Install the dependencies: npm install
-- Start the development server: npm start
-- Open your browser and visit `http://localhost:3000` to see the application
+- Clonez le référentiel : https://github.com/SeydinaAli/docker-compose-back-front.git
+- Accédez au répertoire du projet : cd react-app
+- Installez les dépendances : npm install
+- Démarrez le serveur de développement : npm start
+- Ouvrez votre navigateur et visitez `http://localhost:3000` pour voir l'application
 
+## Utilisation
+- La page d'accueil affiche une liste de tous les éléments récupérés de la base de données
+- Cliquez sur le lien « Ajouter » dans la barre de navigation pour ajouter un nouvel élément
+- Cliquez sur le lien « Rechercher » dans la barre de navigation pour rechercher un élément par son nom
 
-## Usage
-- The home page displays a list of all items retrieved from the database
-- Click on the "Add" link in the navigation bar to add a new item
-- Click on the "Search" link in the navigation bar to search for an item by name
-
-You can copy and paste this content into your repository's `README.md file`
+Vous pouvez copier et coller ce contenu dans le fichier `README.md` de votre référentiel
