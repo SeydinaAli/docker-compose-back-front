@@ -74,4 +74,7 @@ Le code du frontend React se trouve dans le dossier react-frontend
 - Cliquez sur le lien « Rechercher » dans la barre de navigation pour rechercher un élément par son nom
 
 Vous pouvez copier et coller ce contenu dans le fichier `README.md` de votre référentiel
+<<<<<<< HEAD
 Vous pouvez copier et coller ce contenu dans le fichier `README.md` de votre référentiel
+=======
+>>>>>>> a1e9ac0023ee5f74b99f0ac991d47528e28298f4
