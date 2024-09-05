@@ -11,14 +11,14 @@ Pour exécuter cette application, vous devez disposer des prérequis suivants :
 - Node.js et npm (Node Package Manager)
 - Base de données MySQL (avec un schéma nommé `hostbuddy_restapi`)
 
+
 ### Configuration
 
 1. Clonez le référentiel sur votre machine locale.
-<<<<<<< HEAD
-`git clone https://github.com/SeydinaAli/docker-compose-back-front.git
-=======
-`git clone https://github.com/Millstack/springboot-react.git`
->>>>>>> 823407298ab5ec09d971a319bbe7816648b5a924
+`git clone https://github.com/SeydinaAli/docker-compose-back-front.git`
+
+
+
 
 2. Configurez la base de données MySQL :
 - Créez une base de données MySQL avec le nom `hostbuddy_restapi`
@@ -61,11 +61,8 @@ Le code du frontend React se trouve dans le dossier react-frontend
 
 # Application React
 
-<<<<<<< HEAD
+
 - Clonez le référentiel : https://github.com/SeydinaAli/docker-compose-back-front.git
-=======
-- Clonez le référentiel : https://github.com/SeydinaAli/docker-compose-back-front.git
->>>>>>> 823407298ab5ec09d971a319bbe7816648b5a924
 - Accédez au répertoire du projet : cd react-app
 - Installez les dépendances : npm install
 - Démarrez le serveur de développement : npm start
@@ -76,8 +73,5 @@ Le code du frontend React se trouve dans le dossier react-frontend
 - Cliquez sur le lien « Ajouter » dans la barre de navigation pour ajouter un nouvel élément
 - Cliquez sur le lien « Rechercher » dans la barre de navigation pour rechercher un élément par son nom
 
-<<<<<<< HEAD
 Vous pouvez copier et coller ce contenu dans le fichier `README.md` de votre référentiel
-=======
 Vous pouvez copier et coller ce contenu dans le fichier `README.md` de votre référentiel
->>>>>>> 823407298ab5ec09d971a319bbe7816648b5a924
